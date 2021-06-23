@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row mt-4">
+    <div class="col-12">
+        <h1>Add Item</h1>
+        <form action="{% url 'add_item' %}" method='Post' class="form-inline"> {% csrf_token %}
+            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="type here..">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </form>
+    </div> 
+</div>  
+    
+    <div class="row mt-4">
+        <div class="col-12">
+            <ul class="list-group active">
+                <li class="list-group-item" aria-current="true">An active item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+            </ul>
+        </div>
+    </div>
+    
+{% endblock %}  

@@ -3,8 +3,8 @@
 <div class="row mt-4">
     <div class="col-12">
         <h1>Add Item</h1>
-        <form action="{% url 'add_item' %}" method='Post' class="form-inline"> {% csrf_token %}
-            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="type here..">
+        <form action="{% url 'add_item' %}" method='Post' class="form-inline"> 
+            <input type="text" class="form-control mb-2 mr-sm-2" name='content' placeholder="type here..">
             <button type="submit" class="btn btn-primary mb-2">Submit</button>
         </form>
     </div> 

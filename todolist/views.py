@@ -9,10 +9,8 @@ def home(request):
 
 @csrf_exempt
 def add_item(request):
-    from datetime import timezone
-    content = request.POST('content')
+    # content = request.POST['content']
     added_timezone = timezone.now()
-    print(content)
     print(added_timezone)
     # base_url = "add_item/?add-item{}"
     return render(request, "todolist/index.html")
